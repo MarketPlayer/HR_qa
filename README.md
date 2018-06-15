@@ -1,13 +1,13 @@
-# ng-music-tracker
-Simple music tracker view: Angular &amp; RxJS &amp; D3.js
+## Тестовое задание для QA
+Компонент ng-music-tracker разработан на основе ТЗ https://docs.google.com/document/d/1WTFhelMvXaC41GjYb67ylQFP04veY8CaQtwNqGzNdiA/edit?usp=sharing
 
+Ваша задача написать достаточное количество тест-кейсов для данного компонента, а также найти и описать баги.
+Результат пришлите в виде ссылки на файл. 
 
-![Music tracker](https://github.com/Gusachenko/ng-music-tracker/blob/master/github_assets/screen.png?raw=true "Music tracker")
-
-## Getting started
+## Запуск компонента
 ```bash
-git clone https://github.com/Gusachenko/ng-music-tracker.git new-project
-cd new-project
+git clone https://github.com/MarketPlayer/HR_qa.git ng-music-tracker
+cd ng-music-tracker
 npm install
 npm start
 ```
