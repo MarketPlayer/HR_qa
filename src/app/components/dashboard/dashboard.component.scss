@@ -1,0 +1,62 @@
+@import '../../global-variables.scss';
+
+:host {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 80%;
+  padding: 0;
+  border: 1px solid black;
+  background: white;
+
+  .first-vertical-column {
+    position: absolute;
+    top: 0;
+    left: $first-vertical-column_width;
+    height: 100%;
+    box-sizing: border-box;
+    width: 2px;
+    padding-top: $first-horizontal-row_height;
+    border-right: 2px solid black;
+    background: transparent;
+  }
+
+  .first-horizontal-row {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: $first-horizontal-row_height;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: $first-vertical-column_width;
+    border-bottom: 2px solid black;
+    background: transparent;
+
+    .first-horizontal-row__content {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-left: $timeline-padding-around;
+      padding-right: $timeline-padding-around;
+    }
+  }
+
+  .content {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding-top: $first-horizontal-row_height;
+
+    .songs-list {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+      overflow: auto;
+    }
+  }
+}

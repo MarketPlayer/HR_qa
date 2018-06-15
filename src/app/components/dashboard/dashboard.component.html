@@ -1,0 +1,17 @@
+<div class="content">
+  <div class="songs-list">
+    <ng-container *ngFor="let song of songsList; index as i;">
+      <app-song-item [id]="song.id" [name]="song.name" (onremove)="removeTrack($event)"></app-song-item>
+    </ng-container>
+  </div>
+</div>
+
+<div class="first-vertical-column"></div>
+
+<div class="first-horizontal-row">
+  <div class="first-horizontal-row__content">
+    <ng-container *ngFor="let t of timeLineNumbers; index as i;">
+      <div class="t-column">{{i === timeLineNumbers.length - 1 ? 0 : i + 1}}</div>
+    </ng-container>
+  </div>
+</div>

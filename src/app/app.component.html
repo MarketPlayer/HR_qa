@@ -1,0 +1,7 @@
+<div class="action-buttons">
+    <input type="file" #fileInput style="display:none" (change)="addNewSong($event)">
+    <input (click)="fileInput.click()" type="button" value="Добавить трек">
+    <!-- <input (click)="addNewSong()" type="button" value="Добавить трек"> -->
+</div>
+
+<app-dashboard></app-dashboard>
